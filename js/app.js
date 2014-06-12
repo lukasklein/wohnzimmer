@@ -10,12 +10,13 @@ var OfferCtrl = function($scope, $firebase) {
     };
 
     $scope.addOffer = function() {
+        $scope.offer.$priority = $scope.offer.from;
         $scope.offers.$add($scope.offer);
         $scope.offer = {
             from: 10,
             to: 19
         };
-    }
+    };
 };
 
 wohnzimmer.filter('range', function() {
