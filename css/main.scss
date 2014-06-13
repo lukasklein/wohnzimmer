@@ -1,0 +1,106 @@
+@import url("fonts.css");
+@import url("kube.css");
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: 'proxima-nova', Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.55em;
+	font-weight: 400;
+	color: #202020;
+}
+
+.hug {
+	padding: 3%;
+}
+
+.intro {
+	
+}
+
+.bar {
+	width: 100%;
+	padding: 14px 3%;
+	background: #076EAD;
+	color: #fff;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.2em;
+	vertical-align: baseline;
+	
+	input[type=text] {
+		display: inline-block;
+		margin: 0 5px 0 4px;
+		border: 0;
+		border-radius: 4px;
+		font-size: 16px;
+		font-family: Colfax, Helvetica, sans-serif;
+		padding: 12px 10px 10px 10px;
+		outline: none;
+		background: rgba(255,255,255,0.21);
+		color: #fff;
+		vertical-align: baseline;
+		line-height: 1.2em;
+		font-weight: 400;
+		width: 202px;
+	}
+	
+	.name {
+		width: 180px !important;
+	}
+	
+	.activity {
+		width: 350px !important;
+	}
+	
+	input:focus {
+		background: rgba(255,255,255,1.0);
+		color: #333;
+	}
+	
+	select {
+		margin: 0 5px 0 4px;
+	}
+
+	button {
+		background: transparent;
+		border: 2px solid #fff;
+		border-radius: 4px;
+		color: #fff;
+		font-size: 16px;
+		font-family: Colfax, Helvetica, sans-serif;
+		font-weight: 400;
+		vertical-align: baseline;
+		line-height: 1.2em;
+		padding: 10px 10px 8px 10px;
+		outline: none;
+		margin-top: -1px;
+		margin-left: 5px;
+		cursor: pointer;
+	}
+	
+	button:hover {
+		background-color: #fff;
+		color: #076EAD;
+	}
+	
+	button:disabled {
+		color: rgba(255,255,255,0.4);
+		border-color: rgba(255,255,255,0.4);
+		cursor: default;
+		background: transparent;
+	}
+}
+
+.list {
+	width: 100%;
+	
+	li {
+		padding: 14px 3%;
+		border-bottom: 1px solid #d0d0d0;
+	}
+}
