@@ -23,7 +23,7 @@
         </span>
 
         <ul class="list">
-            <li ng-repeat="offer in offers | orderByPriority">{{ offer.from }}:00 - {{ offer.to }}:00 - {{ offer.name }} bietet {{ offer.offer }}.</li>
+            <li ng-repeat="offer in offers | orderByPriority"><span class="time">{{ offer.from }}:00 - {{ offer.to }}:00</span><span class="activity"><strong>{{ offer.name }}</strong> bietet <strong>{{ offer.offer }}</strong>.</span></li>
         </ul>
 
         <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
