@@ -15,14 +15,15 @@ body {
 
 .intro {
   position: relative;
-  background: #e0e0e0 url("../img/bruecke2.jpg") no-repeat center;
+  background: #e0e0e0 url("../img/bruecke3.jpg") no-repeat center;
   background-size: cover;
+  background-position: fixed !important;
   padding: 12% 3% 3% 3%; }
   .intro .text {
     background: #fff;
     border-radius: 2px;
     padding: 3%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08); }
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.09); }
 
 .bar {
   width: 100%;
@@ -53,6 +54,8 @@ body {
     width: 128px !important; }
   .bar .activity {
     width: 310px !important; }
+  .bar input:hover {
+    background: rgba(255, 255, 255, 0.26); }
   .bar input:focus {
     background: white;
     color: #333; }
@@ -88,7 +91,8 @@ body {
     height: 79px;
     padding: 0 3%;
     line-height: 1;
-    border-bottom: 1px solid #d0d0d0; }
+    border-bottom: 1px solid #e3e3e3;
+    cursor: default; }
     .list li .time {
       line-height: 79px;
       display: inline-block;
@@ -97,3 +101,5 @@ body {
       color: #444; }
     .list li .activity {
       line-height: 79px; }
+  .list li:hover {
+    background-color: #fafafa; }
