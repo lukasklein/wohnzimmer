@@ -76,3 +76,6 @@ body {
   .list li {
     padding: 16px 3%;
     border-bottom: 1px solid #d0d0d0; }
+    .list li .time {
+      display: inline-block;
+      margin-right: 16px; }
