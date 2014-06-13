@@ -6,14 +6,14 @@
     </head>
     <body ng-controller="OfferCtrl">
 
-		<div class="intro hug">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div class="intro">
+			<div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
 		</div>
 
 		<div class="bar units-row" id="bar">
 
 			<form name="offerForm" action="#" novalidate>
-	            <div>Ich, <input tabindex="1" type="text" ng-model="offer.name" class="name" autofocus="autofocus" required>, biete <input tabindex="2" type="text" ng-model="offer.offer" class="activity" required> von <select tabindex="3" ng-model="offer.from" ng-options="hour + ':00' for hour in [] | range:10:offer.to+1" lower-than="{{ offer.to }}" name="from"></select> bis <select tabindex="4" ng-model="offer.to" ng-options="hour + ':00' for hour in [] | range:offer.from:20"></select> Uhr. <button tabindex="5" type="button" ng-click="addOffer()"  ng-disabled="offerForm.$invalid">Eintragen</button></div>
+	            <div>Ich,&nbsp;<input tabindex="1" type="text" ng-model="offer.name" class="name" autofocus="autofocus" required>&nbsp;mache&nbsp;<input tabindex="2" type="text" ng-model="offer.offer" class="activity" required>&nbsp;von&nbsp;<select tabindex="3" ng-model="offer.from" ng-options="hour + ':00' for hour in [] | range:10:offer.to+1" lower-than="{{ offer.to }}" name="from"></select>&nbsp;bis&nbsp;<select tabindex="4" ng-model="offer.to" ng-options="hour + ':00' for hour in [] | range:offer.from:20"></select>&nbsp;Uhr. <button tabindex="5" type="button" ng-click="addOffer()"  ng-disabled="offerForm.$invalid">Eintragen</button></div>
 	        </form>
 
 		</div>
@@ -23,7 +23,7 @@
         </span>
 
         <ul class="list">
-            <li ng-repeat="offer in offers | orderByPriority"><span class="time">{{ offer.from }}:00 - {{ offer.to }}:00</span><span class="activity"><strong>{{ offer.name }}</strong> bietet <strong>{{ offer.offer }}</strong>.</span></li>
+            <li ng-repeat="offer in offers | orderByPriority"><span class="time">{{ offer.from }}:00 - {{ offer.to }}:00</span><span class="activity">{{ offer.name }} macht {{ offer.offer }}.</span></li>
         </ul>
 
         <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
